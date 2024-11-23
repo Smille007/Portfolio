@@ -1,32 +1,27 @@
-import { useState } from 'react'
+/**
+ * @copyright 2024 Daryna Vershinina Diaz
+ * @license Apache-2.0
+ */
+import Header from "./components/Header"
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () =>{
+  return(
+   <header className='fixed top-0 left -0 w-full h-20 flex items-center z-40 bg-gradient-to-b from-zinc-900 to-zinc-900/0'>
+<div className="max-w-screen-2xl w-full mx-auto px-4">
+<h1>
+  <a href="/" className="logo">
+  <img src="/public/images/logo.svg"
+  width={40} 
+  height={40}alt="Touchless" />
+  </a>
+</h1>
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+
+
+  </div>
+    </header>
   )
 }
+
 
 export default App
