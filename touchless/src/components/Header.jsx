@@ -13,16 +13,20 @@ const Header = () => {
       <img src="/public/images/logo.svg"
       width={40} 
       height={40}alt="Touchless" />
-<h1></h1>
       </a>
   </h1>
-  <div className=" ">
-    <button className='' onClick={null}>
+  <div className="">
+    <button
+     className="" 
+    onClick={null}>
         <span className="material-symbols-rounded">
-        menu</span>
+ menu
+        </span>
+        Navbar
+
     
     </button>
-    Navbar
+
   </div>
 </div>
   </header>
