@@ -27,7 +27,7 @@ const Header = () => {
               src="images/logo.svg"
               width={40}
               height={40}
-              alt="Touchless"
+              alt="Touchless logo"
             />
           </a>
         </h1>
