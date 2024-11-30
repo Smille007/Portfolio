@@ -47,8 +47,11 @@ body{
   @apply bg-zinc-700 overflow-hidden;
 }
  .img-cover{
-  @apply w-full h-full object-cover
+  @apply w-full h-full object-cover;
 } 
+.section{
+  @apply pt-20 lg:pt-32;
+}
 
 /*__________*\
  *Components*
