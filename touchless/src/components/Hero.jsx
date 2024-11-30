@@ -14,7 +14,8 @@ const Hero = () => {
                width={40} 
                height={40}
                 alt='Touchless team' 
-                className='img-cover' />
+                className="img-cover"
+                 />
                 </figure> 
                 <div className="flex items-center gap-1.5 text-zinc-400 text-sm tracking-wide">
                 <span className="relative w-2 h-2 rounded-full bg-emerald-400">
@@ -23,7 +24,8 @@ const Hero = () => {
                     Available for work
                 </div>
             </div>
-            <h2 className="">
+            <h2 className="headline-1">
+            Building Scalable Modern Websites for the Future
             </h2>
             <div className="">
                 ButtonPrimary
