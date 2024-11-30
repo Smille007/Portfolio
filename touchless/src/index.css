@@ -12,14 +12,20 @@ html{
   scroll-behavior: smooth;
 }
 body{ 
-  @apply bg-zinc-900 text-zinc-50
+  @apply bg-zinc-900 text-zinc-50;
 }
 
 /*__________*\
  *TYPOGRAPHY*
 \*__________*/
 .headline-1{
-  @apply text-5xl leading-tight font-semibold lg:text-[55px]
+  @apply max-w-max;
+  background: -webkit-linear-gradient(0deg, #fafafa, #a1a1aa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.headline-1{
+  @apply text-5xl leading-tight font-semibold lg:text-[55px] lg:leading-[1.15]
 }
 
 
