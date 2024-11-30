@@ -7,51 +7,53 @@
  * Node Modules
  */
 import PropTypes from "prop-types";
-
 /**
  * Primary Button
  */
-
-
-const ButtonPrimary = ({
-  href,
-  target = "_self",
-  label,
-  icon,
-  classes,
-}) => {
-  if (href) {
-    return (
-      <a href={href} target={target} className={"btn btn-primary " + classes}>
-        {label}
-        {icon ? (
-          <span className="material-symbols-rounded" aria-hidden="true">
-            {icon}
-          </span>
-        ) : undefined}
-      </a>
-    );
-  } else {
-    return (
-      <button className={"btn btn-primary " + classes}>
-        {label}
-      </button>
-    );
-  }
-};
-
-ButtonPrimary.propTypes = {
-  label: PropTypes.string.isRequired,
-  href: PropTypes.string,
-  target: PropTypes.string,
-  icon: PropTypes.string,
-  classes: PropTypes.string,
-};
-
-/**
- * Outline Button
- */
-const ButtonOutline = ({
+export const ButtonPrimary = ({
+    href,
+    target = "_self",
+    label,
+    icon,
+    classes,
+  }) => {
+    if (href) {
+      return (
+        <a href={href} target={target} className={"btn btn-primary " + classes}>
+          {label}
+          {icon ? (
+            <span className="material-symbols-rounded" aria-hidden="true">
+              {icon}
+            </span>
+          ) : null}
+        </a>
+      );
+    } else {
+      return (
+        <button className={"btn btn-primary " + classes}>
+          {label}
+          {icon ? (
+            <span className="material-symbols-rounded" aria-hidden="true">
+              {icon}
+            </span>
+          ) : null}
+        </button>
+      );
+    }
+  };
+  
+  ButtonPrimary.propTypes = {
+    label: PropTypes.string.isRequired,
+    href: PropTypes.string,
+    target: PropTypes.string,
+    icon: PropTypes.string,
+    classes: PropTypes.string,
+  };
+  
+  /**
+   * Outline Button
+   */
+  export const ButtonOutline = ({
     href,
     target = "_self",
     label,
@@ -66,13 +68,18 @@ const ButtonOutline = ({
             <span className="material-symbols-rounded" aria-hidden="true">
               {icon}
             </span>
-          ) : undefined}
+          ) : null}
         </a>
       );
     } else {
       return (
         <button className={"btn btn-outline " + classes}>
           {label}
+          {icon ? (
+            <span className="material-symbols-rounded" aria-hidden="true">
+              {icon}
+            </span>
+          ) : null}
         </button>
       );
     }
@@ -85,5 +92,6 @@ const ButtonOutline = ({
     icon: PropTypes.string,
     classes: PropTypes.string,
   };
+  
 
 export default {ButtonPrimary, ButtonOutline}
