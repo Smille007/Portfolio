@@ -27,25 +27,23 @@ const aboutItems = [
               in retail or the restaurant industry.
             </p>
             {/* Column Layout for Stats */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-7">
+            <div className="flex flex-wrap items-center gap-4 md:gap-7">
               {aboutItems.map(({ label, number }, key) => (
-                <div key={key} className="flex items-center md:mb-2">
-                  <div className="text-2xl font-bold text-white">
-                    <span>{number}</span>
-                    <span className="text-emerald-400">+</span>
-                  </div>
-                  <p className="text-zinc-400 text-sm mt-2">{label}</p>
+                <div key={key}>
+                <div className="flex items-center md:mb-2">
+                  <span className="text-2xl font-semibold md:text-4xl text-white">{number}</span>
+                    <span className="text-emerald-400 font-semibold md:text-3xl">+</span>
+                </div>
+                <p className="text-zinc-400 text-sm mt-2">{label}</p>
                 </div>
               ))}
-            </div>
-            {/* Logo */}
-            <div className="mt-8 flex justify-center">
+          
               <img
                 src="/images/logo.svg"
                 alt="Logo"
                 width={30}
                 height={30}
-                className=""
+                className="ml-auto md:w-[40px] md:h-[40px]"
               />
             </div>
           </div>
