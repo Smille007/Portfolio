@@ -7,11 +7,11 @@
 const aboutItems = [
     {
       label: "Jobs done",
-      number: 45,
+      number: 250,
     },
     {
       label: "Years of experience",
-      number: 10,
+      number: 30,
     },
   ];
   
