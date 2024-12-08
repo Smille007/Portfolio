@@ -54,19 +54,21 @@ const skillItem = [
 
 const Skills = () => {
   return (
-<section className="">
+<section className="section mt-20">
   <div className="container">
     <h2 className="headline-2">
     Essential Tools I use
     </h2>
-    <p className="">
+    <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch]">
     Discover the powerful tools and technologies I use to create exceptional, high-performing websites & applications.
     </p>
-    <div className="text-zinc-400 mt-3 mb-8 max-w-[50ch]">
+
+    <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       {
         skillItem.map(({imgSrc, label, desc}, key)=>
         (
           <SkillCard
+          key={key}
           imgSrc={imgSrc} 
           label={label}
           desc={desc}
