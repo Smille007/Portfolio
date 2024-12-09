@@ -60,7 +60,7 @@ className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-zinc-50/5 ro
 </div>
         </div>
         <form 
-        action=""
+        action="https://getform.io/f/bvrrjpmb"
         method="POST"
          className="xl:pl-10 2xl:pl-20"
          >
@@ -82,7 +82,7 @@ placeholder="Daryna Diaz"
     </div>
 
 </div>
-<div className="">
+<div className="mb-4">
     <div className="">
         <label htmlFor="email"
          className="label"
@@ -101,11 +101,11 @@ placeholder="Daryna@Diaz"
 <div className="">
 
 </div>
-<div className="">
+<div className="mb-4">
     <label htmlFor="message" className="label">Mesage</label>
-    <textarea name="message" id="message" placeholder="Hi!!!" required className="text-field"></textarea>
+    <textarea name="message" id="message" placeholder="Hi!!!" required className="text-field resize-y min-h-32 max-h-80"></textarea>
 </div>
-<button type="submit" className="btn btn-primary">
+<button type="submit" className="btn btn-primary [&]:max-w-full w-full justify-center">
 Submit
 </button>
          </form>
