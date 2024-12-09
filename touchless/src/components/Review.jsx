@@ -53,7 +53,7 @@ const reviews = [
         <div className="container">
           <h2 className="headline-2 mb-8">What our customers say</h2>
           {/* Make container scrollable and add padding */}
-          <div className="flex items-start gap-4 w-full overflow-x-auto px-4">
+          <div className="flex items-stretch gap-4 w-full overflow-x-auto px-4">
             {reviews.map(({ content, name, imgSrc, company }, key) => (
               <ReviewCard
                 key={key}
