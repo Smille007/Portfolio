@@ -39,10 +39,10 @@ const Contact = () => {
     <section id='contact' className="section">
        <div className="container lg:grid lg:grid-cols-2 lg:items-stretch">
         <div className="mb-12 lg:mb-0 lg:flex lg:flex-col">
-           <h2 className="headline-2 lg:max-w-[12ch]">
+           <h2 className="headline-2 lg:max-w-[12ch] reveal-up">
            Contact us for details
             </h2> 
-<p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch]">
+<p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch] reveal-up">
 Reach out today to discuss your needs and start collaborating on something amazing!
 </p>
 <div className="flex items-center gap-2 mt-auto">
@@ -51,7 +51,7 @@ Reach out today to discuss your needs and start collaborating on something amazi
 key={key}
 href={href}
 target='_blank'
-className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-zinc-50/5 rounded-lg transition-[background-color,color] hover:bg-zinc-50 hover:text-zinc-950 active:bg-zinc-50/80"
+className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-zinc-50/5 rounded-lg transition-[background-color,color] hover:bg-zinc-50 hover:text-zinc-950 active:bg-zinc-50/80 reveal-up"
 >
     {icon}
 </a>
@@ -67,7 +67,7 @@ className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-zinc-50/5 ro
 <div className="md:grid md:items-center md:grid-cols-2 md:gap-2">
     <div className="mb-4">
         <label htmlFor="name"
-         className="label"
+         className="label reveal-up"
          >
             Name
          </label>
@@ -77,15 +77,14 @@ id="name"
 autoComplete="name"
 required
 placeholder="Daryna Diaz"
- className="text-field" />
+ className="text-field reveal-up" />
 
     </div>
 
 </div>
 <div className="mb-4">
-    <div className="">
         <label htmlFor="email"
-         className="label"
+         className="label reveal-up"
          >
             Email
          </label>
@@ -95,17 +94,16 @@ id="email"
 autoComplete="email"
 required
 placeholder="Daryna@Diaz"
- className="text-field" />
+ className="text-field reveal-up" />
     </div>
-</div>
 <div className="">
 
 </div>
 <div className="mb-4">
-    <label htmlFor="message" className="label">Mesage</label>
-    <textarea name="message" id="message" placeholder="Hi!!!" required className="text-field resize-y min-h-32 max-h-80"></textarea>
+    <label htmlFor="message" className="label reveal-up">Message</label>
+    <textarea name="message" id="message" placeholder="Hi!!!" required className="text-field resize-y min-h-32 max-h-80 reveal-up"></textarea>
 </div>
-<button type="submit" className="btn btn-primary [&]:max-w-full w-full justify-center">
+<button type="submit" className="btn btn-primary [&]:max-w-full w-full justify-center reveal-up">
 Submit
 </button>
          </form>

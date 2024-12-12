@@ -38,7 +38,9 @@ elements.forEach((element)=>{
   gsap.to(element, {
     scrollTrigger: {
       trigger: element,
-      scrub: true
+      start: '-200 bottom',
+      end: 'bottom 80%',
+      scrub: true,
     },
     y: 0,
     opacity: 1,
