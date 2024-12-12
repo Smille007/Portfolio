@@ -18,7 +18,7 @@ const aboutItems = [
     return (
       <section id="about" className="section">
         <div className="container">
-          <div className="bg-zinc-800 p-7 rounded-2xl md:p-12">
+          <div className="bg-zinc-800 p-7 rounded-2xl md:p-12 reveal-up">
             <p className="text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch]">
               Welcome! We are Touchless! We have undergone the trial-and-error
               process on your behalf and have forged partnerships with the finest

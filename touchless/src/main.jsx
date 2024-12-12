@@ -11,6 +11,7 @@ import { createRoot } from 'react-dom/client'
  * CSS
  */
 import './index.css';
+import 'lenis/dist/lenis.css'
 /**
  * Components
  */

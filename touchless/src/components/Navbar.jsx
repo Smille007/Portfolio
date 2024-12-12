@@ -44,17 +44,23 @@ const Navbar = ({ navOpen }) => {
 
   // Handle link click to update active state
   const handleActiveLinkChange = (event) => {
-    event.preventDefault(); // Prevent default anchor behavior
-
+    const target = event.target.getAttribute("href");
+    const section = document.querySelector(target);
+  
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to section
+    }
+  
     if (lastActiveLink.current) {
       lastActiveLink.current.classList.remove("active");
     }
-
+  
     event.target.classList.add("active");
     lastActiveLink.current = event.target;
-
+  
     adjustActiveBox(event.target); // Update active-box position
   };
+  
 
   // Navigation items
   const navItems = [
