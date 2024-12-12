@@ -60,7 +60,7 @@ const Footer = () => {
   return (
     <footer className="section">
         <div className="container">
-            <div className="">
+            <div className="lg:grid lg:grid-col">
 
                 <div className="">
                     <h2 className="headline-1">lets work together today!</h2>
