@@ -36,7 +36,7 @@ const Hero = () => {
 
           {/* Heading */}
           <h2 className="headline-1 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[15ch]">
-            Daryna Vereshinina
+            Touchless - Less Touch More Inteligence 
           </h2>
 
           {/* Buttons */}
