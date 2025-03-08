@@ -57,8 +57,8 @@ elements.forEach((element)=>{
     <main>
     <Hero />
     <About />
-    <Skill />
     <Work />
+    <Skill />
     <Review />
     <Contact />
     </main>
