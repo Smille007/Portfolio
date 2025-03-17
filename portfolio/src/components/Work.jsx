@@ -11,10 +11,10 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
     {
-      imgSrc: '/images/project-1.jpg',
-      title: 'Full stack music app',
-      tags: ['API', 'MVC', 'Development'],
-      projectLink: 'https://musify-5al0.onrender.com/'
+      imgSrc: '/images/project-1.png',
+      title: 'Full stack Wedding website-invitation',
+      tags: ['API', 'SQL', 'Development'],
+      projectLink: 'https://djwedding.netlify.app/'
     },
     {
       imgSrc: '/images/project-2.jpg',
