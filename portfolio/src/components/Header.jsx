@@ -44,7 +44,7 @@ const Header = () => {
 
         {/* Contact Us */}
         <a href="#contact" className="btn btn-secondary max-md:hidden md:justify-self-end">
-          Contact Us
+          Contact Me
         </a>
       </div>
     </header>

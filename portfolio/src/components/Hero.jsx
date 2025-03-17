@@ -42,7 +42,7 @@ const Hero = () => {
           {/* Buttons */}
           <div className="flex items-center gap-3">
             <ButtonPrimary 
-            label="Download Presentation"
+            label="Download Resume"
             icon="download"
             />
             <ButtonOutline

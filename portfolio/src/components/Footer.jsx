@@ -49,7 +49,7 @@ const sitemap = [
       href: 'https://www.instagram.com/smille007'
     },
     {
-      label: 'Touchless',
+      label: 'Portfolio',
       href: ''
     }
   ];
@@ -65,7 +65,7 @@ const Footer = () => {
                 <div className="mb-10">
                     <h2 className="headline-1 mb-8 lg:max-w-[12ch] reveal-up">Lets work together today!</h2>
                     <ButtonPrimary 
-                    href="mailto:support@touchlesspos.io"
+                    href="mailto:darynavershinina@gmail.com"
                     label="Start project"
                     icon="chevron_right"
                     classes="reveal-up"
