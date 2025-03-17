@@ -6,11 +6,11 @@
 const aboutItems = [
     {
       label: "Jobs done",
-      number: 250,
+      number: 10,
     },
     {
       label: "Years of experience",
-      number: 30,
+      number: 2,
     },
   ];
   
@@ -20,10 +20,8 @@ const aboutItems = [
         <div className="container">
           <div className="bg-zinc-800 p-7 rounded-2xl md:p-12 reveal-up">
             <p className="text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch]">
-              Welcome! We are Touchless! We have undergone the trial-and-error
-              process on your behalf and have forged partnerships with the finest
-              software solutions tailored to your business needs, whether you are
-              in retail or the restaurant industry.
+            👋 Hey, I’m Daryna - a web developer who turns ideas into reality. I specialize in building fast, responsive, and user-friendly websites that blend functionality with great design. With a strong foundation in front-end and back-end technologies, I create solutions that are both efficient and engaging.<br></br><br></br>
+            🚀 Looking to work together? Feel free to reach out or grab my resume to learn more about my experience!
             </p>
             {/* Column Layout for Stats */}
             <div className="flex flex-wrap items-center gap-4 md:gap-7">

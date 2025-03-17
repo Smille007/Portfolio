@@ -42,7 +42,7 @@ const Header = () => {
           <Navbar navOpen={navOpen} />
         </div>
 
-        {/* Contact Us */}
+        {/* Contact Me */}
         <a href="#contact" className="btn btn-secondary max-md:hidden md:justify-self-end">
           Contact Me
         </a>

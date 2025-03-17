@@ -8,79 +8,85 @@
  */
 import SkillCard from "./SkillCard";
 
-
-const skillItem = [
+const skillsData = [
   {
-    imgSrc: '/images/figma.svg',
-    label: 'Figma',
-    desc: 'Design tool'
+    category: "Core Web Development",
+    skills: [
+      { imgSrc: "/images/javascript.svg", label: "JavaScript", desc: "Programming Language" },
+      { imgSrc: "/images/typescript.svg", label: "TypeScript", desc: "Typed JavaScript" },
+      { imgSrc: "/images/html5.svg", label: "HTML", desc: "Markup Language" },
+      { imgSrc: "/images/css3.svg", label: "CSS", desc: "Styling & Layout" },
+    ],
   },
   {
-    imgSrc: '/images/css3.svg',
-    label: 'CSS',
-    desc: 'User Interface'
+    category: "Frontend Development",
+    skills: [
+      { imgSrc: "/images/react.svg", label: "React", desc: "Frontend Library" },
+      { imgSrc: "/images/tailwindcss.svg", label: "Tailwind CSS", desc: "Utility-first CSS" },
+      { imgSrc: "/images/bootstrap.svg", label: "Bootstrap", desc: "CSS Framework" },
+      { imgSrc: "/images/sass.svg", label: "SASS", desc: "CSS Preprocessor" },
+    ],
   },
   {
-    imgSrc: '/images/javascript.svg',
-    label: 'JavaScript',
-    desc: 'Interaction'
+    category: "Backend Development",
+    skills: [
+      { imgSrc: "/images/nodejs.svg", label: "Node.js", desc: "JavaScript Runtime" },
+      { imgSrc: "/images/expressjs.svg", label: "Express.js", desc: "Backend Framework" },
+      { imgSrc: "/images/api.svg", label: "REST APIs", desc: "Web Services" },
+      { imgSrc: "/images/security.svg", label: "JWT & Bcrypt.js", desc: "Authentication" },
+    ],
   },
   {
-    imgSrc: '/images/nodejs.svg',
-    label: 'NodeJS',
-    desc: 'Web Server'
+    category: "Databases & Data Handling",
+    skills: [
+      { imgSrc: "/images/Postgresql_elephant.svg", label: "PostgreSQL", desc: "SQL Database" },
+      { imgSrc: "/images/mongodb.svg", label: "MongoDB", desc: "NoSQL Database" },
+      { imgSrc: "/images/mysql.svg", label: "MySQL", desc: "Relational Database" },
+      { imgSrc: "/images/graphql.svg", label: "GraphQL", desc: "Data Query Language" },
+    ],
   },
   {
-    imgSrc: '/images/expressjs.svg',
-    label: 'ExpressJS',
-    desc: 'Node Framework'
+    category: "Version Control & Deployment",
+    skills: [
+      { imgSrc: "/images/git.svg", label: "Git", desc: "Version Control" },
+      { imgSrc: "/images/postman.svg", label: "Postman", desc: "API Testing" },
+    ],
   },
   {
-    imgSrc: '/images/mongodb.svg',
-    label: 'MongoDB',
-    desc: 'Database'
-  },
-  {
-    imgSrc: '/images/react.svg',
-    label: 'React',
-    desc: 'Framework'
-  },
-  {
-    imgSrc: '/images/tailwindcss.svg',
-    label: 'TailwindCSS',
-    desc: 'User Interface'
+    category: "Development & Collaboration Tools",
+    skills: [
+      { imgSrc: "/images/vscode.svg", label: "VS Code", desc: "Code Editor" },
+      { imgSrc: "/images/figma.svg", label: "Figma", desc: "Design Tool" },
+      { imgSrc: "/images/slack.svg", label: "Slack", desc: "Team Communication" },
+      { imgSrc: "/images/trello.svg", label: "Trello", desc: "Project Management" },
+    ],
   },
 ];
 
 const Skills = () => {
   return (
-<section className="section mt-20">
-  <div className="container">
-    <h2 className="headline-2 reveal-up">
-    Essential Tools I use
-    </h2>
-    <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch]">
-    Discover the powerful tools and technologies I use to create exceptional, high-performing websites & applications.
-    </p>
+    <section className="section mt-20">
+      <div className="container">
+        <h2 className="headline-2 reveal-up">Essential Tools I Use</h2>
+        {skillsData.map(({ category, skills }, index) => (
+          <div key={index} className="mt-8">
+            <h3 className="text-lg font-semibold text-zinc-200 reveal-up">{category}</h3>
+            <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-4">
+              {skills.map(({ imgSrc, label, desc }, key) => (
+                <SkillCard
+                  key={key}
+                  imgSrc={imgSrc}
+                  label={label}
+                  desc={desc}
+                  classes="reveal-up"
+                />
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
 
-    <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-      {
-        skillItem.map(({imgSrc, label, desc}, key)=>
-        (
-          <SkillCard
-          key={key}
-          imgSrc={imgSrc} 
-          label={label}
-          desc={desc}
-          classes='reveal-up'
-          />
-        )
-        )
-      }
-    </div>
-  </div>
-</section>
-  )
-}
-
-export default Skills
+export default Skills;

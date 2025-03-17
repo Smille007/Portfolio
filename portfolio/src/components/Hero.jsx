@@ -19,7 +19,7 @@ const Hero = () => {
           <div className="flex items-center gap-3">
             <figure className="img-box w-9 h-9 rounded-lg">
               <img
-                src="/images/avatar-1.jpg"
+                src="/public/images/avatar-1.JPG"
                 width={40}
                 height={40}
                 alt="Daryna Diaz"
@@ -35,13 +35,14 @@ const Hero = () => {
           </div>
 
           {/* Heading */}
-          <h2 className="headline-1 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[15ch]">
-            Hi! I am Daryna!
+          <h2 className="headline-1 max-w-[20ch] sm:max-w-[15ch] lg:max-w-[15ch]">
+        💡 Crafting high-performance websites with clean, scalable code.
           </h2>
 
           {/* Buttons */}
           <div className="flex items-center gap-3">
             <ButtonPrimary 
+            href='/DV_resume.pdf'
             label="Download Resume"
             icon="download"
             />
