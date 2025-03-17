@@ -23,9 +23,10 @@ const Header = () => {
           <a href="/" className="logo">
             <img
               src="images/logo.svg"
-              width={40}
+              width={60}
               height={40}
-              alt="Touchless logo"
+              alt="Daryna Diaz logo"
+              className="rounded-full"
             />
           </a>
         </h1>

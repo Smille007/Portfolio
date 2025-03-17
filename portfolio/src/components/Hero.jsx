@@ -22,7 +22,7 @@ const Hero = () => {
                 src="/images/avatar-1.jpg"
                 width={40}
                 height={40}
-                alt="Touchless team"
+                alt="Daryna Diaz"
                 className="img-cover"
               />
             </figure>
@@ -60,7 +60,7 @@ const Hero = () => {
               src="/images/hero-banner.png"
               width={656}
               height={800}
-              alt="Touchless"
+              alt="Daryna Diaz"
               className="w-full"
             />
           </figure>
