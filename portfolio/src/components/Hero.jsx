@@ -36,7 +36,7 @@ const Hero = () => {
 
           {/* Heading */}
           <h2 className="headline-1 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[15ch]">
-            Touchless - Your all-in-one POS Solution
+            Hi! I am Daryna!
           </h2>
 
           {/* Buttons */}
@@ -55,7 +55,7 @@ const Hero = () => {
 
         {/* Right Banner */}
         <div className="hidden lg:block">
-          <figure className="w-full max-w-[480px] ml-auto bg-gradient-to-t from-black via-black to-sky-200 rounded-[60px] overflow-hidden">
+          <figure className="w-full max-w-[480px] ml-auto bg-gradient-to-t from-sky-400 via-25% to-black to-45% rounded-[100px] overflow-hidden">
             <img
               src="/images/hero-banner.png"
               width={656}
