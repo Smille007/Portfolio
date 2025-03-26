@@ -60,7 +60,7 @@ className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-zinc-50/5 ro
 </div>
         </div>
         <form 
-        action="https://getform.io/f/bvrrjpmb"
+        action="https://getform.io/f/bolmwlga"
         method="POST"
          className="xl:pl-10 2xl:pl-20"
          >
@@ -76,7 +76,7 @@ name="name"
 id="name"
 autoComplete="name"
 required
-placeholder="Daryna Diaz"
+placeholder="Your Name"
  className="text-field reveal-up" />
 
     </div>
@@ -93,7 +93,7 @@ name="email"
 id="email"
 autoComplete="email"
 required
-placeholder="Daryna@Diaz"
+placeholder="Email"
  className="text-field reveal-up" />
     </div>
 <div className="">
@@ -101,7 +101,7 @@ placeholder="Daryna@Diaz"
 </div>
 <div className="mb-4">
     <label htmlFor="message" className="label reveal-up">Message</label>
-    <textarea name="message" id="message" placeholder="Hi!!!" required className="text-field resize-y min-h-32 max-h-80 reveal-up"></textarea>
+    <textarea name="message" id="message" placeholder="Send me a message" required className="text-field resize-y min-h-32 max-h-80 reveal-up"></textarea>
 </div>
 <button type="submit" className="btn btn-primary [&]:max-w-full w-full justify-center reveal-up">
 Submit
