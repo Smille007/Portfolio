@@ -50,7 +50,7 @@ const sitemap = [
     },
     {
       label: 'Portfolio',
-      href: ''
+      href: 'https://daryna-diaz.netlify.app/'
     }
   ];
 
@@ -102,7 +102,7 @@ const Footer = () => {
     <a href="/" className="logo reveal-up">
         <img src="/images/logo.svg" width={40} height={40} alt="" className="rounded-full" />
     </a>
-    <p className="text-zinc-500 text-sm reveal-up">&copy; 2024 <span className="text-zinc-200">Daryna Diaz</span></p>
+    <p className="text-zinc-500 text-sm reveal-up">&copy; 2024 <span className="text-zinc-200"> Daryna Diaz</span></p>
 </div>
             
         </div>
