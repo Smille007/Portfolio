@@ -40,7 +40,7 @@ const aboutItems = [
                 alt="Logo"
                 width={30}
                 height={30}
-                className="ml-auto md:w-[40px] md:h-[40px]"
+                className="ml-auto rounded-full"
               />
             </div>
           </div>
