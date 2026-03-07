@@ -3,13 +3,14 @@ import { ReactLenis } from 'lenis/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
+import { Toaster } from 'react-hot-toast';
 
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skill from './components/Skill';
 import Contact from './components/Contact';
-import useCursorGlow from './hooks/userCursorGlow'
+import useCursorGlow from './hooks/userCursorGlow';
 
 const Work = lazy(() => import('./components/Work'));
 const Review = lazy(() => import('./components/Review'));
@@ -48,6 +49,32 @@ const App = () => {
 
   return (
     <ReactLenis root>
+      {/* Toast notifications */}
+      <Toaster
+        position="bottom-right"
+        toastOptions={{
+          style: {
+            background: '#27272a',
+            color: '#f4f4f5',
+            border: '1px solid #3f3f46',
+            borderRadius: '12px',
+            fontSize: '14px',
+          },
+          success: {
+            iconTheme: {
+              primary: '#34d399',
+              secondary: '#27272a',
+            },
+          },
+          error: {
+            iconTheme: {
+              primary: '#f87171',
+              secondary: '#27272a',
+            },
+          },
+        }}
+      />
+
       {/* Cursor glow */}
       <div
         id="cursor-glow"
