@@ -1,44 +1,48 @@
-Welcome to my personal portfolio and resume website! 🚀 This is where I showcase my skills, projects, and experience as a Full-Stack Web Developer. Whether you're a recruiter, potential client, or fellow developer, feel free to explore and reach out!
+# Daryna Diaz Portfolio
 
-🌟 About This Project
+A personal portfolio website built to showcase my projects, technical skills, and contact information as a Full-Stack Web Developer.
 
-This website is built to highlight my work and technical expertise in web development. It features an interactive design, smooth navigation, and a clean UI to ensure a great user experience.
+## Live Site
 
-👉  Direct Link
+[View the portfolio](https://daryna-diaz.netlify.app/)
 
-https://daryna-diaz.netlify.app/
+## About
 
-🛠️ Technologies Used
+This project is a personal portfolio and resume website designed for recruiters, hiring managers, potential clients, and collaborators. It highlights my background, featured projects, technical skills, testimonials, and contact information in a clean single-page experience.
 
-This project is built with modern web technologies and best practices, including:
+## Features
 
-Frontend
+- Responsive portfolio layout
+- Hero, About, Skills, Work, Reviews, and Contact sections
+- Smooth scrolling and animated UI interactions
+- Project showcase cards
+- Testimonials section with horizontal scrolling
+- Contact form with Getform integration
+- Social links and quick navigation in the footer
+- Tests
 
-React.js – for dynamic UI components
+## Tech Stack
 
-Tailwind CSS – for responsive styling
+- React
+- Vite
+- JavaScript (ES modules)
+- Tailwind CSS
+- GSAP
+- Lenis
+- ESLint
 
-JavaScript (ES6+) – for interactive features
+## Project Structure
 
-TypeScript – for type safety and maintainability
-
-GSAP – for smooth animations
-
-🔥 Features
-
-Fully responsive design – works seamlessly on all devices
-
-Dynamic skill showcase – categorized tech stack in an intuitive layout
-
-Smooth animations – enhances user experience
-
-Downloadable Resume – grab a copy of my latest resume
-
-Contact Form – reach out directly through the website
-
-Test  - See if contact form renders, uses correct form action and method
-
-
-📬 Connect With Me
-
-If you like what you see and want to collaborate or just say hi, feel free to contact me through the website or connect on LinkedIn!
+```text
+Portfolio/
+├── public/
+├── src/
+│   ├── components/
+│   ├── data/
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
