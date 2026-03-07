@@ -12,7 +12,7 @@ const ReviewCard = ({ content, imgSrc, name, company }) => {
   }));
 
   return (
-    <div className="bg-zinc-800 p-5 rounded-xl min-w-[320px] max-w-[420px] flex flex-col">
+<div className="bg-zinc-800 p-5 rounded-xl min-w-[320px] max-w-[420px] shrink-0 flex flex-col">
       {/* Star Ratings */}
       <div className="flex items-center gap-1 mb-3">
         {ratings.map(({ icon, style }, key) => (

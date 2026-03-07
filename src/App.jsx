@@ -8,10 +8,10 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skill from './components/Skill';
+import Contact from './components/Contact';
 
 const Work = lazy(() => import('./components/Work'));
 const Review = lazy(() => import('./components/Review'));
-const Contact = lazy(() => import('./components/Contact'));
 const Footer = lazy(() => import('./components/Footer'));
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
@@ -50,12 +50,15 @@ const App = () => {
         <Hero />
         <About />
         <Skill />
+
         <Suspense fallback={<div className="p-6 text-center">Loading...</div>}>
           <Work />
           <Review />
-          <Contact />
         </Suspense>
+
+        <Contact />
       </main>
+
       <Suspense fallback={null}>
         <Footer />
       </Suspense>
