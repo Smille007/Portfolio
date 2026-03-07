@@ -68,7 +68,7 @@ const Footer = () => {
             />
           </a>
 
-          <p className="text-zinc-500 text-sm reveal-up">
+          <p className="text-zinc-500 text-sm">
             &copy; 2024 <span className="text-zinc-200">Daryna Diaz</span>
           </p>
         </div>
