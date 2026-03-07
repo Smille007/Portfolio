@@ -36,6 +36,8 @@ Downloadable Resume – grab a copy of my latest resume
 
 Contact Form – reach out directly through the website
 
+Test  - See if contact form renders, uses correct form action and method
+
 
 📬 Connect With Me
 
