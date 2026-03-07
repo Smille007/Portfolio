@@ -8,14 +8,10 @@
  * Components
  */
 import ProjectCard from "./ProjectCard";
+import { projects } from "../data/projects";
 
-const works = [
-    {
-      imgSrc: '/images/project-1.png',
-      title: 'Full stack Wedding website-invitation',
-      tags: ['API', 'SQL', 'Development'],
-      projectLink: 'https://djwedding.netlify.app/'
-    },
+
+
   //   {
   //     imgSrc: '/images/project-2.jpg',
   //     title: 'Free stock photo app',
@@ -46,7 +42,7 @@ const works = [
   //     tags: ['Web-design', 'Development'],
   //     projectLink: 'https://github.com/codewithsadee/vcard-personal-portfolio'
   //   },
-   ];
+   
 
 export const Work = () => {
   return (

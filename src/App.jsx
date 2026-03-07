@@ -1,72 +1,66 @@
-/**
- * @copyright 2024 Daryna Vershinina Diaz
- * @license Apache-2.0
- */
-
-/**
- * Node Modules
- **/ 
-
-import { ReactLenis } from 'lenis/react'
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Suspense, lazy } from 'react';
+import { ReactLenis } from 'lenis/react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 
-/**
- * Register gsap plugins
- **/ 
+import Header from './components/Header';
+import Hero from './components/Hero';
+import About from './components/About';
+import Skill from './components/Skill';
+
+const Work = lazy(() => import('./components/Work'));
+const Review = lazy(() => import('./components/Review'));
+const Contact = lazy(() => import('./components/Contact'));
+const Footer = lazy(() => import('./components/Footer'));
+
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
+const App = () => {
+  useGSAP(() => {
+    const elements = gsap.utils.toArray('.reveal-up');
 
-/**
- * Components
- **/ 
-import Header from "./components/Header"
-import Hero from './components/Hero'
-import About from './components/About'
-import Skill from './components/Skill'
-import Work from "./components/Work"
-import Review from "./components/Review"
-import Contact from "./components/Contact"
-import Footer from "./components/Footer"
+    const animations = elements.map((element) =>
+      gsap.to(element, {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: element,
+          start: '-200 bottom',
+          end: 'bottom 80%',
+          scrub: true,
+        },
+      })
+    );
 
-const App = () =>{
+    return () => {
+      animations.forEach((animation) => {
+        animation.scrollTrigger?.kill();
+        animation.kill();
+      });
+    };
+  });
 
-  useGSAP(()=>{
-const elements=gsap.utils.toArray(' .reveal-up')
-elements.forEach((element)=>{
-  gsap.to(element, {
-    scrollTrigger: {
-      trigger: element,
-      start: '-200 bottom',
-      end: 'bottom 80%',
-      scrub: true,
-    },
-    y: 0,
-    opacity: 1,
-    duration: 1,
-    ease: 'power2.out'
-  })
-})
+  return (
+    <ReactLenis root>
+      <Header />
+      <main>
+        <Hero />
+        <About />
+        <Skill />
+        <Suspense fallback={<div className="p-6 text-center">Loading...</div>}>
+          <Work />
+          <Review />
+          <Contact />
+        </Suspense>
+      </main>
+      <Suspense fallback={null}>
+        <Footer />
+      </Suspense>
+    </ReactLenis>
+  );
+};
 
-  })
-
-
-  return(
-    <ReactLenis root >
-    <Header />
-    <main>
-    <Hero />
-    <About />
-    <Skill />
-    <Work />
-    <Review />
-    <Contact />
-    </main>
-<Footer />
-</ReactLenis>
-  )
-}
-
-
-export default App
+export default App;
