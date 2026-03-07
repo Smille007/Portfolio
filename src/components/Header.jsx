@@ -11,16 +11,17 @@ import {useState} from 'react'
 /**
  * Components
  */
+
 import Navbar from "./Navbar";
 
 const Header = () => {
-  const [navOpen, setNavOpen]=useState(false)
+  const [navOpen, setNavOpen] = useState(false)
+
   return (
     <header className="fixed top-0 left-0 w-full h-20 flex items-center z-40 bg-gradient-to-b from-zinc-900 to-zinc-900/0">
       <div className="max-w-screen-2xl w-full mx-auto px-4 flex justify-between items-center md:px-6 md:grid md:grid-cols-[3fr,1fr,3fr]">
-        {/* Logo */}
         <h1>
-          <a href="/" className="logo">
+          <a href="/" className="logo" aria-label="Go to homepage">
             <img
               src="images/logo.svg"
               width={60}
@@ -30,20 +31,29 @@ const Header = () => {
             />
           </a>
         </h1>
-        
-        {/* Navbar Button (Hidden on medium and larger screens) */}
-        <div className="relative md: justify-self-center">
-          <button className="menu-btn md:hidden" onClick={()=> setNavOpen((prev)=>!prev)}>
-            <span className="material-symbols-rounded">
+
+        <div className="relative md:justify-self-center">
+          <button
+            className="menu-btn md:hidden"
+            onClick={() => setNavOpen((prev) => !prev)}
+            aria-label={navOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-expanded={navOpen}
+            aria-controls="primary-navigation"
+            type="button"
+          >
+            <span className="material-symbols-rounded" aria-hidden="true">
               {navOpen ? 'close' : 'menu'}
-              
             </span>
           </button>
+
           <Navbar navOpen={navOpen} />
         </div>
 
-        {/* Contact Me */}
-        <a href="#contact" className="btn btn-secondary max-md:hidden md:justify-self-end">
+        <a
+          href="#contact"
+          className="btn btn-secondary max-md:hidden md:justify-self-end"
+          aria-label="Jump to contact section"
+        >
           Contact Me
         </a>
       </div>
@@ -52,4 +62,3 @@ const Header = () => {
 };
 
 export default Header;
-

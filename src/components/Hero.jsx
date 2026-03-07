@@ -3,11 +3,8 @@
  * @license Apache-2.0
  */
 
-/**
- * Components
- */
+import { TypeAnimation } from "react-type-animation";
 import { ButtonPrimary, ButtonOutline } from "./Button";
-
 
 const Hero = () => {
   return (
@@ -34,22 +31,38 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Heading */}
+          {/* Heading with typing animation */}
           <h2 className="headline-1 max-w-[20ch] sm:max-w-[15ch] lg:max-w-[15ch]">
-        💡 Crafting high-performance websites with clean, scalable code.
+            <TypeAnimation
+              sequence={[
+                "💡 Crafting high-performance websites with clean, scalable code.",
+                2000,
+                "⚛️ Building modern React apps with great user experience.",
+                2000,
+                "🛠️ Developing full-stack solutions from frontend to backend.",
+                2000,
+                "🚀 Turning ideas into fast, accessible web products.",
+                2000,
+              ]}
+              wrapper="span"
+              speed={60}
+              deletingSpeed={75}
+              repeat={Infinity}
+              cursor={true}
+            />
           </h2>
 
           {/* Buttons */}
           <div className="flex items-center gap-3">
-            <ButtonPrimary 
-            href='/DV_resume.pdf'
-            label="Download Resume"
-            icon="download"
+            <ButtonPrimary
+              href="/DV_resume.pdf"
+              label="Download Resume"
+              icon="download"
             />
             <ButtonOutline
-            href='#about'
-            label='Scroll down'
-            icon='Arrow_Downward'
+              href="#about"
+              label="Scroll down"
+              icon="Arrow_Downward"
             />
           </div>
         </div>

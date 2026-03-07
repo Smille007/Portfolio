@@ -10,10 +10,9 @@ import { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 
 const Navbar = ({ navOpen }) => {
-  const lastActiveLink = useRef(null); // Reference to the currently active link
-  const activeBox = useRef(null); // Reference to the active-box element
+  const lastActiveLink = useRef(null);
+  const activeBox = useRef(null);
 
-  // Adjust the position and size of the active-box dynamically
   const adjustActiveBox = (link) => {
     if (link && activeBox.current) {
       const linkRect = link.getBoundingClientRect();
@@ -26,14 +25,14 @@ const Navbar = ({ navOpen }) => {
     }
   };
 
-  // Initialize the active-box position on mount and updates
   useEffect(() => {
     const initialLink = document.querySelector(".nav-link.active");
+
     if (initialLink) {
       lastActiveLink.current = initialLink;
       adjustActiveBox(initialLink);
     }
-    // Adjust active box on resize
+
     const handleResize = () => adjustActiveBox(lastActiveLink.current);
     window.addEventListener("resize", handleResize);
 
@@ -42,27 +41,26 @@ const Navbar = ({ navOpen }) => {
     };
   }, []);
 
-  // Handle link click to update active state
   const handleActiveLinkChange = (event) => {
     const target = event.target.getAttribute("href");
     const section = document.querySelector(target);
-  
+
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to section
+      section.scrollIntoView({ behavior: "smooth" });
     }
-  
+
     if (lastActiveLink.current) {
       lastActiveLink.current.classList.remove("active");
+      lastActiveLink.current.removeAttribute("aria-current");
     }
-  
-    event.target.classList.add("active");
-    lastActiveLink.current = event.target;
-  
-    adjustActiveBox(event.target); // Update active-box position
-  };
-  
 
-  // Navigation items
+    event.target.classList.add("active");
+    event.target.setAttribute("aria-current", "page");
+    lastActiveLink.current = event.target;
+
+    adjustActiveBox(event.target);
+  };
+
   const navItems = [
     { label: "Home", link: "#home", className: "nav-link active" },
     { label: "About", link: "#about", className: "nav-link" },
@@ -72,18 +70,23 @@ const Navbar = ({ navOpen }) => {
   ];
 
   return (
-    <nav className={`navbar ${navOpen ? "active" : ""}`}>
+    <nav
+      id="primary-navigation"
+      className={`navbar ${navOpen ? "active" : ""}`}
+      aria-label="Primary navigation"
+    >
       {navItems.map(({ label, link, className }, key) => (
         <a
           href={link}
           key={key}
           className={className}
           onClick={handleActiveLinkChange}
+          aria-current={label === "Home" ? "page" : undefined}
         >
           {label}
         </a>
       ))}
-      <div className="active-box" ref={activeBox}></div>
+      <div className="active-box" ref={activeBox} aria-hidden="true"></div>
     </nav>
   );
 };

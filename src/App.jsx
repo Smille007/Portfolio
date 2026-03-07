@@ -9,6 +9,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Skill from './components/Skill';
 import Contact from './components/Contact';
+import useCursorGlow from './hooks/userCursorGlow'
 
 const Work = lazy(() => import('./components/Work'));
 const Review = lazy(() => import('./components/Review'));
@@ -17,6 +18,8 @@ const Footer = lazy(() => import('./components/Footer'));
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const App = () => {
+  useCursorGlow();
+
   useGSAP(() => {
     const elements = gsap.utils.toArray('.reveal-up');
 
@@ -45,6 +48,16 @@ const App = () => {
 
   return (
     <ReactLenis root>
+      {/* Cursor glow */}
+      <div
+        id="cursor-glow"
+        className="pointer-events-none fixed z-[999] h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-0 transition-opacity duration-300"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(56,189,248,0.15) 0%, rgba(56,189,248,0.05) 40%, transparent 70%)",
+        }}
+      />
+
       <Header />
       <main>
         <Hero />
