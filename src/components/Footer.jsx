@@ -41,10 +41,6 @@ const sitemap = [
       href: 'https://www.linkedin.com/in/daryna-v-17469169/'
     },
     {
-      label: 'Twitter X',
-      href: 'https://x.com/TimothyDSnyder'
-    },
-    {
       label: 'Instagram',
       href: 'https://www.instagram.com/smille007'
     },
