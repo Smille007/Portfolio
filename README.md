@@ -1,42 +1,44 @@
-Welcome to my personal portfolio and resume website! 🚀 This is where I showcase my skills, projects, and experience as a Full-Stack Web Developer. Whether you're a recruiter, potential client, or fellow developer, feel free to explore and reach out!
+# Daryna Diaz — Portfolio Website
 
-🌟 About This Project
+Personal portfolio and resume website showcasing my skills, projects, and experience as a Full-Stack Web Developer.
 
-This website is built to highlight my work and technical expertise in web development. It features an interactive design, smooth navigation, and a clean UI to ensure a great user experience.
+🌐 **Live site:** [daryna-diaz.netlify.app](https://daryna-diaz.netlify.app/)
 
-👉  Direct Link
+![Portfolio Preview](./portfolio-preview.png)
 
-https://daryna-diaz.netlify.app/
+---
 
-🛠️ Technologies Used
+## About This Project
 
-This project is built with modern web technologies and best practices, including:
+Built to highlight my work and technical expertise in web development. Features smooth scroll animations, responsive design, and a clean dark UI.
 
-Frontend
+## Technologies Used
 
-React.js – for dynamic UI components
+**Frontend**
+- React.js
+- Tailwind CSS
+- JavaScript (ES6+)
+- GSAP — scroll-triggered animations
+- Lenis — smooth scrolling
 
-Tailwind CSS – for responsive styling
+## Featured Projects
 
-JavaScript (ES6+) – for interactive features
+| Project | Description | Live |
+|---|---|---|
+| Klassiki — LG WebOS TV App | Smart TV streaming app built for Klassiki, packaged as a native WebOS .ipk | [klassiki.netlify.app](https://klassiki.netlify.app/) |
+| Wedding Website & Invitation | Full-stack wedding site with RSVP, event details, and photo gallery | [djwedding.netlify.app](https://djwedding.netlify.app/) |
+| Impactify — Civic Engagement App | Community event platform with donations and Google Maps integration | [group2app.netlify.app](https://group2app.netlify.app/) |
 
-TypeScript – for type safety and maintainability
+## Features
 
-GSAP – for smooth animations
+- Fully responsive — works on all devices
+- Scroll-triggered animations with GSAP
+- Downloadable resume
+- Contact form via Getform
+- Netlify SPA routing
 
-🔥 Features
+## Connect
 
-Fully responsive design – works seamlessly on all devices
-
-Dynamic skill showcase – categorized tech stack in an intuitive layout
-
-Smooth animations – enhances user experience
-
-Downloadable Resume – grab a copy of my latest resume
-
-Contact Form – reach out directly through the website
-
-
-📬 Connect With Me
-
-If you like what you see and want to collaborate or just say hi, feel free to contact me through the website or connect on LinkedIn!
+- [LinkedIn](https://www.linkedin.com/in/daryna-v-17469169/)
+- [GitHub](https://github.com/Smille007)
+- [Instagram](https://www.instagram.com/smille007)
