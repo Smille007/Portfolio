@@ -11,32 +11,28 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
     {
-      imgSrc: '/images/project-capstone.jpg',
-      title: 'Impactify — Civic Engagement App',
-      tags: ['React', 'Node.js', 'Express.js', 'PostgreSQL', 'Bootstrap'],
-      projectLink: 'https://group2app.netlify.app/',
-      githubLink: 'https://github.com/Smille007/capstone_frontend'
+      imgSrc: '/images/project-klassiki.jpg',
+      title: 'Klassiki — LG WebOS Smart TV App',
+      tags: ['React', 'WebOS', 'Streaming'],
+      projectLink: 'https://github.com/Smille007/klassiki-lg-mvp'
     },
     {
       imgSrc: '/images/project-1.png',
-      title: 'Personal Blog App',
-      tags: ['React', 'Node.js', 'Express.js', 'PostgreSQL'],
-      projectLink: 'https://github.com/Smille007/Portfolio_Project_Frontend',
-      githubLink: 'https://github.com/Smille007/Portfolio_Project_Frontend'
+      title: 'Wedding Website & Invitation',
+      tags: ['React', 'SQL', 'Full Stack'],
+      projectLink: 'https://github.com/Smille007/Wedding1'
     },
     {
-      imgSrc: '/images/project-2.jpg',
-      title: 'Wedding Invitation App',
-      tags: ['React', 'CSS', 'PostgreSQL'],
-      projectLink: 'https://github.com/Smille007/Wedding1',
-      githubLink: 'https://github.com/Smille007/Wedding1'
+      imgSrc: '/images/project-capstone.jpg',
+      title: 'Impactify — Civic Engagement App',
+      tags: ['React', 'Node.js', 'Full Stack'],
+      projectLink: 'https://github.com/Smille007/capstone_frontend'
     },
     {
-      imgSrc: '/images/project-3.jpg',
-      title: 'Inventory Management App',
-      tags: ['HTML', 'CSS', 'JavaScript'],
-      projectLink: 'https://github.com/Smille007/-Inventory-Web-Application-Project',
-      githubLink: 'https://github.com/Smille007/-Inventory-Web-Application-Project'
+      imgSrc: '/images/project-portfolio.jpg',
+      title: 'Personal Portfolio Website',
+      tags: ['React', 'Tailwind CSS', 'GSAP'],
+      projectLink: 'https://github.com/Smille007/Portfolio'
     },
    ];
 
