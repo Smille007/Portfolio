@@ -26,7 +26,7 @@ const works = [
       imgSrc: '/images/project-capstone.jpg',
       title: 'Impactify — Civic Engagement App',
       tags: ['React', 'Node.js', 'Full Stack'],
-      projectLink: 'https://github.com/Smille007/capstone_frontend'
+      projectLink: 'https://impactify.netlify.app/'
     },
     {
       imgSrc: '/images/project-portfolio.jpg',
